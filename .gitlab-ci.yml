@@ -5,7 +5,7 @@ before_script:
 
 setup:
   script:
-    - sudo apt-get install -y binfmt-support
+    - sudo apt-get install -y binfmt-support curl
     - sudo update-binfmts --enable
     - sudo update-binfmts --enable qemu-arm
     - ./build.sh -a
